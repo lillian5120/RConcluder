@@ -41,7 +41,7 @@ fluidPage(
                         sidebarPanel(
                           tags$h4(tags$b("Import your model")),
                           tags$hr(),
-                          uiOutput("file1"),
+                          uiOutput("importFile"),
                           tags$hr(),
                           tags$h4("Do not know how to begin?Start from example data!"),
                           downloadLink("downloadData",  tags$b("Example Data Download")),
@@ -54,7 +54,7 @@ fluidPage(
                         ),
                         mainPanel(
                           wellPanel(
-                          uiOutput("add_child_ui"),
+                          uiOutput("edit_module_ui"),
                           titlePanel(h4(strong("Tree model"))),
                           wellPanel(
                             style = "background: white",
